@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvBaseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Base"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTipPercentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tvBaseLabel"
+        app:layout_constraintTop_toBottomOf="@id/tvBaseLabel"
+        />
+
+    <TextView
+        android:id="@+id/tvPeopleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People"
+        android:layout_marginTop="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvTipPercentLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipPercentLabel"/>
+
+
+    <TextView
+        android:id="@+id/tvTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Tip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@id/tvPeopleLabel"
+        app:layout_constraintTop_toBottomOf="@id/tvPeopleLabel" />
+
+    <TextView
+        android:id="@+id/tvTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvTipLabel"
+        app:layout_constraintTop_toBottomOf="@id/tvTipLabel" />
+
+    <TextView
+        android:id="@+id/tvBaseResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="103.11"
+        android:layout_marginStart="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBaseLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvBaseLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvBaseLabel" />
+
+    <TextView
+        android:id="@+id/tvPercentResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="19.93"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTipPercentLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvBaseResultLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvTipPercentLabel" />
+
+    <TextView
+        android:id="@+id/tvPeopleResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPeopleLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvPercentResultLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvPeopleLabel" />
+
+    <TextView
+        android:id="@+id/tvTipResultlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="20.21"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@id/tvTipLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvPeopleResultLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvTipLabel"
+        />
+
+    <TextView
+        android:id="@+id/tvTotalResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="120.67"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvPeopleResultLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalLabel"
+        />
+
+    <Button
+        android:id="@+id/btnPastTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Go Back"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalLabel" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
